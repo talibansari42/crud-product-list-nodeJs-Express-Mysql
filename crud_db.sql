@@ -48,8 +48,16 @@ ADD CONSTRAINT `category_id`
   ON DELETE RESTRICT
   ON UPDATE CASCADE;
 
--- ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root123';
--- flush privileges;
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root123';
+flush privileges;
+
+-----------------
+INSERT INTO `my_db`.`category`(`category_id`,`category_name`)VALUES(11,'electronics');
+INSERT INTO `my_db`.`category`(`category_id`,`category_name`)VALUES(22,'Groceries');
+INSERT INTO `my_db`.`category`(`category_id`,`category_name`)VALUES(33,'Cloths');
+INSERT INTO `my_db`.`category`(`category_id`,`category_name`)VALUES(44,'vegitables');
+
+--------------
 
 
 
